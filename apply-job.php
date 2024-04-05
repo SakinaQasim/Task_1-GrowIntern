@@ -113,7 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     cols="" rows="10"></textarea>
             </div>
             <div>
-                <button class="bg-orange-500 hover:bg-orange-600 text-black py-2 px-3 rounded" type="submit">Apply
+                <button class="bg-purple-500 hover:bg-purple-600 text-black py-2 px-3 rounded" type="submit">Apply
                     Now</button>
             </div>
         </form>

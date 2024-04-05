@@ -6,10 +6,10 @@ session_start();
 // Check if the user is logged in
 if (!isset ($_SESSION['user_id'])) {
     // Redirect to the login page if the user is not logged in
-    header("Location: /workiee_jobportal/account/login.php");
+    header("Location: /jobportal/account/login.php");
     exit();
 } else if (($_SESSION['account_type'] !== 'recruiter')) {
-    header('Location: /workiee_jobportal');
+    header('Location: /jobportal');
     exit();
 }
 // Get the current user's ID from the session
@@ -54,7 +54,7 @@ if (!isset ($profile)) {
     // Display the company profile form
     ?>
     <main class="main bg-white px-6 md:px-16 py-6">
-        <div class="w-full md:max-w-md xl:max-w-xl mx-auto">
+        <div class="w-full md:max-w-md xl:max-w-xl mx-auto ">
             <form method="post">
                 <h1 class="text-2xl mb-2 font-bold text-center">Company Profile</h1>
                 <p class="text-gray-600 font-semibold text-center py-2">
@@ -64,19 +64,19 @@ if (!isset ($profile)) {
                     <div class="mb-4">
                         <label class="block text-gray-700 text-sm mb-2" for="name">Company Name</label>
                         <input
-                            class="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"
+                            class="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500 bg-purple-200"
                             type="text" id="name" name="name" placeholder="Faraz Web Link.." autofocus>
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700 text-sm mb-2" for="resume">Company Website</label>
                         <input
-                            class="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"
+                            class="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500 bg-purple-200"
                             type="url" id="website" name="website" placeholder="https://www.business.com.." autofocus>
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700 text-sm mb-2" for="industry">Industry</label>
                         <input
-                            class="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"
+                            class="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500 bg-purple-200"
                             type="text" id="industry" name="industry" placeholder="Technology" autofocus>
                     </div>
 
@@ -84,12 +84,12 @@ if (!isset ($profile)) {
                     <div>
                         <label for="description" class="block text-gray-700 text-sm mb-2">Description</label>
                         <textarea name="description" id="description"
-                            class="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"
+                            class="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500 bg-purple-200"
                             cols="" rows="10"></textarea>
                     </div>
 
                     <div>
-                        <button class="bg-orange-500 hover:bg-orange-600 text-white py-2 px-3 rounded" type="submit">Create
+                        <button class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-3 rounded" type="submit">Create
                             Profile</button>
                     </div>
             </form>
@@ -162,7 +162,7 @@ if (!isset ($profile)) {
                                         <p class="text-black text-lg px-2 mb-2">Description: ' . $row["description"] . '</p>
                                         <p class="text-black text-lg px-2 mb-2">Date: ' . $row["created_at"] . '</p>
                     <div class="flex py-3">
-                        <a href="/workiee_jobportal/job-detail?job_id=' . $row['id'] . '"
+                        <a href="/jobportal/job-detail?job_id=' . $row['id'] . '"
                         <button
                             class="px-5 text-sm py-3 mx-2 bg-orange-500 text-white hover:bg-transparent border border-white hover:border-orange-500 hover:text-black hover:bg-white hover:text-orange-950 rounded-md transition-all duration-200">View
                             Job Link</button></a>

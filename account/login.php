@@ -26,11 +26,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Redirect the user to the dashboard or another page after successful login
             if($_SESSION['account_type'] === 'jobseeker'){
                 $message = 'Logged in Successfully! Redirecting...';
-                header("Refresh: $delay; URL=/workiee_jobportal/dashboard/jobseeker");
+                header("Refresh: $delay; URL=/jobportal/dashboard/jobseeker");
             }
             else if($_SESSION['account_type'] === 'recruiter'){
                 $message = 'Logged in Successfully! Redirecting...';
-                header("Refresh: $delay; URL=/workiee_jobportal/dashboard/recruiter");
+                header("Refresh: $delay; URL=/jobportal/dashboard/recruiter");
             }
             else{
                 header('Location: /');
@@ -54,16 +54,16 @@ include '../includes/header.php';
             <h1 class="text-2xl font-bold sm:text-3xl">Welcome Back!</h1>
             <p class="text-gray-800 text-center py-4"><?php echo $message; ?></p>
             <p class="mt-4 text-gray-500">
-                Login Now and Start Visiting your dashboard!
+                Login Now and  Visit your dashboard!
             </p>
         </div>
 
-        <form method="post" class="mx-auto mb-0 mt-8 max-w-md space-y-4">
+        <form method="post" class="mx-auto mb-0 mt-8 max-w-md space-y-4 ">
             <div>
-                <label for="email" class="sr-only">Email</label>
+                <label for="email" class="sr-only ">Email</label>
 
                 <div class="relative">
-                    <input type="email" class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" name="email" placeholder="Enter email" />
+                    <input type="email" class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm bg-purple-100" name="email" placeholder="Enter email" />
 
                     <span class="absolute inset-y-0 end-0 grid place-content-center px-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none"
@@ -79,7 +79,7 @@ include '../includes/header.php';
                 <label for="password" class="sr-only">Password</label>
 
                 <div class="relative">
-                    <input type="password" class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" name="password" placeholder="Enter password" />
+                    <input type="password" class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm bg-purple-100" name="password" placeholder="Enter password" />
 
                     <span class="absolute inset-y-0 end-0 grid place-content-center px-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none"
@@ -96,11 +96,11 @@ include '../includes/header.php';
             <div class="flex items-center justify-between">
                 <p class="text-sm text-gray-500">
                     New Here? 
-                    <a class="underline" href="/workiee_jobportal/account/register">Sign up</a>
+                    <a class="underline" href="/jobportal/account/register">Sign up</a>
                 </p>
 
                 <button type="submit"
-                    class="inline-block rounded-lg bg-orange-500 px-8 py-3 text-sm font-medium text-white">
+                    class="inline-block rounded-lg bg-purple-500 px-8 py-3 text-sm font-medium text-white">
                     Login
                 </button>
             </div>
@@ -109,7 +109,7 @@ include '../includes/header.php';
 
     <div class="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
         <img alt="Welcome"
-            src="https://images.unsplash.com/photo-1630450202872-e0829c9d6172?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://www.freepik.com/free-photo/portrait-content-beautiful-african-american-female-model-smiles-joyfully-keeps-hands-together-glad-recieve-congratulations_9592087.htm#fromView=search&page=1&position=3&uuid=68adaa33-e5c4-47ba-879a-353f819e81d1"
             class="absolute inset-0 h-full w-full object-cover" />
     </div>
 </section>

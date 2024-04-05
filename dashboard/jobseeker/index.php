@@ -10,7 +10,7 @@ if (!isset ($_SESSION['user_id'])) {
   exit();
 
 } else if (($_SESSION['account_type'] !== 'jobseeker')) {
-  header('Location: /workiee_jobportal');
+  header('Location: /jobportal');
   exit();
 }
 // Get the current user's ID from the session

@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database_name = "workiee";
+$database_name = "job_portal";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database_name);

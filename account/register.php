@@ -1,7 +1,7 @@
 <?php
 
 include '../config.php';
-$pageTitle = 'Register - Workiee';
+$pageTitle = 'Register - TalentTrove';
 include '../includes/header.php';
 $message = false;
 
@@ -22,21 +22,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $insertSql = "INSERT INTO users (username, email, password, account_type) VALUES ('$username', '$email', '$password', '$accountType')";
 
         if ($conn->query($insertSql) === TRUE) {
-            $message = 'Registered Successfully! <a href="/workiee_jobportal/account/login">Login Now</a>';
+            $message = 'Registered Successfully! <a href="/jobportal/account/login">Login Now</a>';
         } else {
             echo "Error: " . $insertSql . "<br>" . $conn->error;
         }
     }
 }
 ?>
-<section class="relative flex flex-wrap lg:h-screen lg:items-center max-w-screen-2xl mx-auto">
-    <div class="w-full px-6 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
-        <div class="mx-auto max-w-lg text-center">
+<section class="relative flex flex-wrap lg:h-screen lg:items-center max-w-screen-2xl mx-auto ">
+    <div class="w-full px-6 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24 bg-purple-100">
+        <div class="mx-auto max-w-lg text-center ">
             <h1 class="text-2xl font-bold sm:text-3xl">Get started today!</h1>
             <p class="text-gray-800 text-center py-4"><?php echo $message; ?></p>
             <p class="mt-4 text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero nulla eaque error neque
-                ipsa culpa autem, at itaque nostrum!
+                You can start your career from here and leave every thing to us and know your real worth.. so start from today!
             </p>
         </div>
 
@@ -94,13 +93,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
 
             <div class="flex items-center justify-between">
-                <p class="text-sm text-gray-500">
+                <p class="text-sm text-purple-800">
                     Have Account?
-                    <a class="underline" href="/workiee_jobportal/account/login">Login</a>
+                    <a class="underline" href="/jobportal/account/login">Login</a>
                 </p>
 
                 <button type="submit"
-                    class="inline-block rounded-lg bg-orange-500 px-7 py-3 text-sm font-medium text-white">
+                    class="inline-block rounded-lg bg-purple-500 px-7 py-3 text-sm font-medium text-white">
                     Register
                 </button>
             </div>

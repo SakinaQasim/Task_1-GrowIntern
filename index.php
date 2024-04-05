@@ -1,123 +1,72 @@
 <?php
 session_start();
-$pageTitle = 'Workiee - Your Job Home';
+$pageTitle = 'TalentTrove';
 include './includes/header.php';
 
 ?>
 <!-- bg-orange-100 -->
-<section class="bg-orange-50 text-black">
-  <div class=" mx-auto lg:max-w-screen-2xl space-y-6 lg:space-y-0 px-8 py-12 lg:py-18 lg:flex lg:h-2/3 lg:items-start">
-    <div class="flex-1 my-auto h-full">
-      <h1
-        class="bg-gradient-to-r from-blue-800 to-orange-500 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
-        Chart Your Journey with
-
-        <span class="sm:block"> with Workiee </span>
+<section class="text-black relative" style="background-image: url('https://img.freepik.com/free-photo/friendly-partners-handshaking-group-meeting-thanking-successful-teamwork_1163-4691.jpg?w=900'); background-size: cover; background-position: center;">
+  <div class="absolute inset-0 bg-white opacity-50"></div>
+  <div class="mx-auto w-full lg:max-w-screen-md space-y-6 lg:space-y-0 px-8 py-12 lg:py-18 lg:flex lg:h-screen lg:items-center relative">
+    <div class="flex flex-col w-full text-center justify-center items-center my-auto h-full relative z-10">
+      <h1 class="bg-gradient-to-r from-purple-800 to-blue-500 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
+      Explore Your Voyage with TalentTrove
       </h1>
-
-      <p class=" mt-6 max-w-xl sm:text-xl/relaxed">
-        Explore exciting job prospects and find your path to success. Join us to connect with opportunities
-        tailored just for you.
-      </p>
+      <p class="mt-6 max-w-2xl sm:text-xl/relaxed">From the bustling metropolis to the tranquil countryside, let TalentTrove be your compass, guiding you towards fulfilling endeavors </p>
 
       <div class="mt-8 flex flex-wrap justify-start gap-4">
-        <a class="block  rounded border border-orange-600 bg-orange-600 px-6 lg:px-8 py-3 text-xs lg:text-sm font-medium text-white hover:bg-transparent hover:text-black focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
-          href="account/register.php">
+        <a class="block rounded border border-purple-600 bg-purple-600 px-6 lg:px-8 py-3 text-xs lg:text-sm font-medium text-white hover:bg-transparent hover:text-black focus:outline-none focus:ring active:text-opacity-75 sm:w-auto" href="account/register.php">
           Register Now
         </a>
 
-        <a class="block  rounded border border-orange-600 px-4 lg:px-8 py-3 text-xs lg:text-sm font-medium text-black hover:bg-orange-600 hover:text-white focus:outline-none focus:ring active:bg-orange-500 sm:w-auto"
-          href="jobs">
+        <a class="block rounded border border-purple-600 px-4 lg:px-8 py-3 text-xs lg:text-sm font-medium text-black hover:bg-purple-600 hover:text-white focus:outline-none focus:ring active:bg-orange-500 sm:w-auto" href="jobs">
           Latest Jobs
         </a>
-      </div>
-    </div>
-    <div class="flex-1 flex items-center justify-center">
-      <style>
-        .rotating-world img {
-          animation: rotateWorld 20s linear infinite;
-          display: block;
-          max-width: 100%;
-          height: auto;
-        }
-
-        @keyframes rotateWorld {
-          from {
-            transform: rotate(0deg);
-          }
-
-          to {
-            transform: rotate(360deg);
-          }
-        }
-      </style>
-      <div class="rotating-world">
-        <img src="./img/earth.png" alt="World Map" class="w-72 h-72 sm:w-96 sm:h-96 xl:w-[500px] xl:h-[500px]" />
       </div>
     </div>
   </div>
 </section>
 
 <section class="md:my-8 lg:my-16">
-  <div class="mx-auto max-w-screen-2xl">
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-      <div class=" p-8 md:p-12 ">
-        <div class="mx-auto max-w-xl text-center  lg:flex lg:flex-col lg:h-full lg:justify-center lg:items-center">
-          <h2 class="text-2xl font-bold text-black">
-            Begin Your Career Adventure: The Doorway to Endless Possibilities with Workiee
+    <div class="mx-auto max-w-screen-2xl grid grid-cols-1 gap-4 md:grid-cols-2">
+      <!-- First Main Div -->
+      <div class="p-8 md:p-12 flex bg-fuchsia-300">
+        <img alt="Student" src="https://img.freepik.com/free-photo/business-people-casual-meeting_53876-101882.jpg?w=1060" class="h-40 w-40 object-cover mr-4 sm:h-56 lg:h-[500px] md:h-full" />
+        <div class="mx-auto max-w-xl text-center lg:flex lg:flex-col lg:justify-center lg:items-center">
+          <h2 class="text-2xl font-bold text-black mb-4">
+            Begin Your Career Adventure: The Doorway to Endless Possibilities with TalentTrove
           </h2>
-
-          <p class="hidden text-black/90 sm:mt-6 sm:block">
-            Set forth on an enriching path to career success through our extensive job portal. Dive into a vast sea of
-            unique opportunities, crafted to empower you in forging and enhancing your career trajectory with absolute
-            certainty. Your ideal job is out there – initiate your quest now!
+          <p class="hidden text-black md:mt-6 md:block">
+            Join TalentTrove to embark on an enriching path to career success. Explore a vast sea of unique opportunities crafted to empower you in forging and enhancing your career trajectory with absolute certainty. Your ideal job is out there – initiate your quest now!
           </p>
-
           <div class="mt-4 md:mt-10">
-            <a href="#"
-              class="inline-block rounded border border-white hover:border-orange-600 bg-orange-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-black focus:outline-none focus:ring focus:ring-yellow-400">
-              Embrack Now
+            <a href="#" class="inline-block rounded border border-white hover:border-purple-600 bg-purple-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-black focus:outline-none focus:ring focus:ring-yellow-400">
+              Embrace Now
             </a>
           </div>
         </div>
       </div>
-
-      <div class="hidden sm:block grid grid-cols-2 gap-4 md:grid-cols-1">
-        <img alt="Student"
-          src="https://images.unsplash.com/photo-1618355776464-8666794d2520?auto=format&fit=crop&w=654&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          class="h-40 w-full object-cover sm:h-56 lg:h-[500px] md:h-full" />
-      </div>
-    </div>
-  </div>
-  <div class="overflow-hidden bg-gray-100 sm:grid sm:grid-cols-2 mx-auto max-w-screen-2xl">
-
-    <img alt="Student"
-      src="https://plus.unsplash.com/premium_photo-1663051241451-709fa4de55bc?auto=format&fit=crop&w=1770&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      class="h-56 w-full object-cover sm:h-full" />
-
-    <div class="p-8 md:p-12 lg:px-16 lg:py-24">
-      <div class="mx-auto max-w-xl text-center">
-        <h2 class="text-2xl font-bold text-gray-900">
-          Boost Your Team's Potential: Secure Top-Notch Talent with Workiee!
-        </h2>
-
-        <p class="hidden text-gray-500 md:mt-4 md:block">
-          Advance your organization's achievements by tapping into premier talent via our all-encompassing job portal.
-          Gain entry to an extensive array of proficient individuals, enabling your enterprise to excel with an adept
-          crew. Your future standout employee awaits – refine your hiring approach with assurance and accuracy.
-        </p>
-
-        <div class="my-4 md:mt-8">
-          <a href="#"
-            class="inline-block border border-white bg-orange-600 hover:bg-transparent hover:text-black rounded px-12 py-3 text-sm hover:border-orange-600 font-medium text-white transition hover:bg-orange-600 focus:outline-none focus:ring focus:ring-yellow-400">
-            List a Position
-          </a>
+      <!-- Second Main Div -->
+      <div class="p-8 md:p-12 flex bg-fuchsia-200 ">
+        <img alt="Student" src="https://img.freepik.com/free-photo/human-resources-business-profession-graphic-concept_53876-124776.jpg?w=1060" class="h-40 w-40 object-cover mr-4 sm:h-56 lg:h-full md:h-full" />
+        <div class="mx-auto max-w-xl text-center lg:flex lg:flex-col lg:justify-center lg:items-center">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">
+            Boost Your Team's Potential: Secure Top-Notch Talent with TalentTrove!
+          </h2>
+          <p class="hidden text-dark-500 md:mt-4 md:block">
+            Accelerate your organization's success by connecting with premier talent through TalentTrove's comprehensive job portal. Gain access to a diverse array of skilled individuals, enabling your enterprise to excel with a proficient team. Your future standout employee awaits – refine your hiring approach with confidence and precision.
+          </p>
+          <div class=" md:mt-8">
+            <a href="#" class="inline-block border border-white bg-purple-600 hover:bg-transparent hover:text-black rounded px-12 py-3 text-sm hover:border-purple-600 font-medium text-white transition hover:bg-purple-600 focus:outline-none focus:ring focus:ring-yellow-400">
+              List a Position
+            </a>
+          </div>
         </div>
       </div>
     </div>
-
-  </div>
 </section>
+
+
 <?php
 include './includes/footer.php';
 ?>

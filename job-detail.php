@@ -34,7 +34,7 @@ echo '
       <div class="max-w-xl text-left rtl:sm:text-right">
         <h1 class="text-3xl font-extrabold sm:text-5xl">
           Apply Now For
-          <strong class="block font-extrabold text-orange-500"> ' . $job['title'] . ' </strong>
+          <strong class="block font-extrabold text-purple-500"> ' . $job['title'] . ' </strong>
         </h1>
   
         <p class="mt-4 max-w-lg capitalize sm:text-xl/relaxed">
@@ -44,7 +44,7 @@ echo '
         <div class="mt-8 flex flex-wrap gap-4 text-center">
           <a
             href="apply-job?job_id=' . $job['id'] . '"
-            class="block w-full rounded bg-orange-500 px-12 py-3 text-sm font-medium text-white hover:text-black shadow hover:bg-transparent hover:border-orange-500 border border-orange-500 focus:outline-none focus:ring active:bg-orange-500 sm:w-auto"
+            class="block w-full rounded bg-purple-500 px-12 py-3 text-sm font-medium text-white hover:text-black shadow hover:bg-transparent hover:border-purple-500 border border-purple-500 focus:outline-none focus:ring active:bg-purple-500 sm:w-auto"
           >
             Apply Now
           </a>
@@ -53,10 +53,10 @@ echo '
     </div>
   </section>
   
-  <div class="flex flex-col bg-orange-50 w-full mx-auto p-8 md:p-12 max-w-screen-2xl">
+  <div class="flex flex-col bg-purple-50 w-full mx-auto p-8 md:p-12 max-w-screen-2xl">
     <h5 class="text-2xl text-black font-semibold mb-4 italic">Job Description</h5>
     <div class="text-lg mb-4">' . $job['description'] . ' </div>
-    <h5 class="italic block mb-4 mt-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-orange-gray-900">
+    <h5 class="italic block mb-4 mt-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-purple-gray-900">
       Job Details
     </h5>
     <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
@@ -68,7 +68,7 @@ echo '
       </ul>
     </p>
   <a href=apply-job?job_id=' . $job['id'] . '>
-  <button class="mt-4 align-middle font-sans font-semibold text-center uppercase transition-all text-sm py-3 px-6 rounded-lg hover:bg-white hover:text-orange-500 shadow-md shadow-gray-900/10 hover:shadow-lg bg-orange-500 text-white hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none" type="button">
+  <button class="mt-4 align-middle font-sans font-semibold text-center uppercase transition-all text-sm py-3 px-6 rounded-lg hover:bg-white hover:text-purple-500 shadow-md shadow-gray-900/10 hover:shadow-lg bg-purple-500 text-white hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none" type="button">
   Apply Now
 </button></a>
   </div>

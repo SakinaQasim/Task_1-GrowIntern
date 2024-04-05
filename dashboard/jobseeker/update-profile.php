@@ -4,7 +4,7 @@ include '../../config.php';
 
 // Start or resume the session
 session_start();
-$pageTitle = 'Update Profile - Workiee';
+$pageTitle = 'Update Profile - TalentTrove';
 include('../../includes/header.php');
 // Check if the user is logged in
 if (!isset($_SESSION['user_id'])) {
@@ -12,7 +12,7 @@ if (!isset($_SESSION['user_id'])) {
   header("Location: /account/login.php");
   exit();
 } else if (($_SESSION['account_type'] !== 'jobseeker')) {
-  header('Location: /workiee_jobportal');
+  header('Location: /jobportal');
   exit();
 }
 // Get the current user's ID from the session
